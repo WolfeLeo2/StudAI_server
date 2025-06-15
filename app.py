@@ -18,12 +18,12 @@ logger = logging.getLogger(__name__)
 model_name = "google/flan-t5-small"  # or "google/flan-t5-base" if small is too limited
 
 # Load model and tokenizer
-logger.info(f"Loading model: {model_name}")
-tokenizer = T5Tokenizer.from_pretrained(model_name)
-model = T5ForConditionalGeneration.from_pretrained(model_name)
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
-logger.info(f"Model loaded on device: {device}")
+#logger.info(f"Loading model: {model_name}")
+#tokenizer = T5Tokenizer.from_pretrained(model_name)
+#model = T5ForConditionalGeneration.from_pretrained(model_name)
+#device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+#model.to(device)
+#ogger.info(f"Model loaded on device: {device}")
 
 # Add this after your FastAPI app initialization
 request_queue = RequestQueue(max_queue_size=MAX_QUEUE_SIZE, timeout=REQUEST_TIMEOUT)
