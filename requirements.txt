@@ -1,6 +1,8 @@
-fastapi
-uvicorn
-torch
-transformers
-sentencepiece
-pydantic
+pip-requirements
+--find-links https://download.pytorch.org/whl/cpu/torch_stable.html
+torch==2.0.1+cpu
+transformers==4.30.2
+sentencepiece==0.1.99
+fastapi==0.100.0
+uvicorn==0.22.0
+pydantic==2.0.3
